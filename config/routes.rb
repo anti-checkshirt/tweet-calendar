@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # useridからtweetを取得する
+  get '/tweet/:id', to: 'tweets#show'
+
+  # CSVファイルのアップロード
+  namespace :tweet do
+    resources :file, only:[:new, :show, :create]
+  end
+
+
 end
