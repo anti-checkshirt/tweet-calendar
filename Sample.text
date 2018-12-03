@@ -1,0 +1,56 @@
+{
+  "source" : "\u003Ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E",
+  "entities" : {
+    "user_mentions" : [ ],
+    "media" : [ ],
+    "hashtags" : [ ],
+    "urls" : [ ]
+  },
+  "geo" : { },
+  "id_str" : "1068065646682898432",
+  "text" : "\u6700\u8FD1\u7528\u4E8B\u3042\u308B\u3068\u304D\u306B\u9650\u3063\u3066\u7761\u7720\u4E0D\u8DB3\u3067\u53C2\u52A0\u3057\u304C\u3061\u3067\u3001\u4ECA\u65E5\u3082\u7720\u305F\u3044",
+  "id" : 1068065646682898432,
+  "created_at" : "2018-11-29 08:54:28 +0000",
+  "user" : {
+    "name" : "\u3068\u3082\u304D",
+    "screen_name" : "tomoki_sun",
+    "protected" : false,
+    "id_str" : "764414957920276480",
+    "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/1061520538386915329\/ExNUPGbF_normal.jpg",
+    "id" : 764414957920276480,
+    "verified" : false
+  }
+}, {
+  "source" : "\u003Ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003ETwitter for iPhone\u003C\/a\u003E",
+  "entities" : {
+    "user_mentions" : [ {
+      "name" : "\uD83D\uDE4B\u200D\u2642\uFE0F\uD83D\uDE4B\u200D\u2642\uFE0F\uD83D\uDE4B\u200D\u2642\uFE0F",
+      "screen_name" : "s_k_lit",
+      "indices" : [ 0, 8 ],
+      "id_str" : "1046662142483525632",
+      "id" : 1046662142483525632
+    } ],
+    "media" : [ ],
+    "hashtags" : [ ],
+    "urls" : [ ]
+  },
+  "in_reply_to_status_id_str" : "1068046953538154496",
+  "geo" : { },
+  "id_str" : "1068047003941105664",
+  "in_reply_to_user_id" : 764414957920276480,
+  "text" : "@s_k_lit \u305D\u308C\u306A",
+  "id" : 1068047003941105664,
+  "in_reply_to_status_id" : 1068046953538154496,
+  "created_at" : "2018-11-29 07:40:23 +0000",
+  "in_reply_to_screen_name" : "tomoki_sun",
+  "in_reply_to_user_id_str" : "764414957920276480",
+  "user" : {
+    "name" : "\u3068\u3082\u304D",
+    "screen_name" : "tomoki_sun",
+    "protected" : false,
+    "id_str" : "764414957920276480",
+    "profile_image_url_https" : "https:\/\/pbs.twimg.com\/profile_images\/1061520538386915329\/ExNUPGbF_normal.jpg",
+    "id" : 764414957920276480,
+    "verified" : false
+  }
+},
