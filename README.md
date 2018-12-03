@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DBに保存する項目
 
-Things you may want to cover:
+| 項目                         | 型     | 内容                                      |
+| ---------------------------- | ------ | ----------------------------------------- |
+| text                         | String | ツイート                                  |
+| created_at                   | String | ツイートされた時間                        |
+| user/screen_name             | String | ツイートしたユーザーID                    |
+| user/profile_image_url_https | String | ツイートしたユーザーのプロフィール画像URL |
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
