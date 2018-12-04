@@ -2,7 +2,7 @@
 
 <%= form_tag({controller: "tweet_carender", action: "import", method: "post"}, {multipart: true}) do %>
   <div class="field"> 
-    <%= file_field_tag :json_file %>
+    <%= file_field_tag :file, accept: ".js, text/json" %>
   </div>
     
   <div class="actions">

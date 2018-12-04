@@ -6,11 +6,16 @@ class TweetCarenderController < ApplicationController
   end
 
   def upload
-    puts 'upload'
+
   end
 
   def import
-    puts 'importしたい'
+    path = params[:file].path
+    puts path
+    json = ActiveSupport::JSON.decode(File.read(path))
+    json.each do |data|
+      puts data['text']
+    end
   end
 
   # ユーザーのアップロードしたJSONファイルをDBに保存する
