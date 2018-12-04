@@ -25,8 +25,10 @@ class TweetCarenderController < ApplicationController
       if @tweet.save
         p 'DB保存に成功'
       else
-        p 'DB保存に失敗'
+        # 一回でも保存に失敗したらリダイレクトする
+        render('/upload')
       end
     end
+    redirect_to('/')
   end
 end
