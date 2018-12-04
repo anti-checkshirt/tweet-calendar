@@ -2,11 +2,15 @@ class TweetCarenderController < ApplicationController
 
   # ユーザー検索
   def show
-    
+
   end
 
   def upload
     puts 'upload'
+  end
+
+  def import
+    puts 'importしたい'
   end
 
   # ユーザーのアップロードしたJSONファイルをDBに保存する
