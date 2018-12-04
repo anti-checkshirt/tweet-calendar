@@ -5,6 +5,10 @@ class TweetCarenderController < ApplicationController
     
   end
 
+  def upload
+    puts 'upload'
+  end
+
   # ユーザーのアップロードしたJSONファイルをDBに保存する
   def index
     json = ActiveSupport::JSON.decode(File.read('Sample.json'))
