@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'search/index'
   root to: 'home#index'
 
   get '/search/:id', to: 'search#show'
