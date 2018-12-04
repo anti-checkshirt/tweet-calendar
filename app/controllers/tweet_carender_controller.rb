@@ -10,11 +10,11 @@ class TweetCarenderController < ApplicationController
   end
 
   def import
-    path = params[:file].path
-    puts path
-    json = ActiveSupport::JSON.decode(File.read(path))
+    upload_file = params[:file].path
+    puts 'fileの内容は'
+    json = ActiveSupport::JSON.decode(File.read(upload_file))
     json.each do |data|
-      puts data['text']
+      p data['text']
     end
   end
 
