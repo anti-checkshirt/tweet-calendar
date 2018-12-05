@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   root to: 'home#index'
   
-  get '/search/:id', to: 'search#show'
+  get '/search/:id', to: 'search#index'
   
   get '/upload', to: 'tweet_carender#upload'
   
