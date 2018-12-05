@@ -2,16 +2,19 @@ class TweetCarenderController < ApplicationController
 
   # ユーザー検索
   def show
-    
+
+  end
+
+  def upload
+
   end
 
   # ユーザーのアップロードしたJSONファイルをDBに保存する
-  def index
-    json = ActiveSupport::JSON.decode(File.read('Sample.json'))
+  def import
+    upload_file = params[:file].path
+    json = ActiveSupport::JSON.decode(File.read(upload_file))
     json.each do |data|
-      puts data['user']['screen_name']
-      puts data['text']
-      puts data['created_at']
+      p data['text']
 
       @tweet = Tweet.new(
         text: data['text'],
@@ -20,10 +23,12 @@ class TweetCarenderController < ApplicationController
         profile_image_url: data['user']['profile_image_url_https']
       )
       if @tweet.save
-        puts 'DBに保存成功'
+        p 'DB保存に成功'
       else
-        puts 'DBに保存失敗'
+        # 一回でも保存に失敗したらリダイレクトする
+        render('/upload')
       end
     end
+    redirect_to('/')
   end
 end
