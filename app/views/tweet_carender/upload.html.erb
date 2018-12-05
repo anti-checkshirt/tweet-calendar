@@ -1,0 +1,11 @@
+<h1>気味の悪い拡張子のファイルをアップロード</h1>
+
+<%= form_tag({controller: "tweet_carender", action: "import", method: "post"}, {multipart: true}) do %>
+  <div class="field"> 
+    <%= file_field_tag :file, accept: ".json, text/json" %>
+  </div>
+    
+  <div class="actions">
+    <%= submit_tag "気味の悪い拡張子のファイルを読み込む"%>
+  </div>
+<% end %>
