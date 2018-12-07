@@ -8,7 +8,7 @@ class SearchController < ApplicationController
     else
       @tweets = Tweet.where(screen_name: params[:id]).order(tweet_created_at: :desc)
       # p @tweets      
-      if params[:start_date] != nil
+      if params[:start_date].nil?
         today_date = Date.today
         start_date = today_date.year.to_s + "-" + today_date.month.to_s
         @tweets.each do |tweet|
