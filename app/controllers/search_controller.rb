@@ -12,7 +12,7 @@ class SearchController < ApplicationController
         today_date = Date.today
         start_date = today_date.year.to_s + "-" + today_date.month.to_s
         @tweets.each do |tweet|
-          if tweet[:tweet_created_at].include?(params[:start_date].to_s)
+          if tweet[:tweet_created_at].include?(start_date.to_s)
             p tweet
           else
             return "Not found => tweet"
