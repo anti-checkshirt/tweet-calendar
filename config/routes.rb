@@ -10,9 +10,8 @@ Rails.application.routes.draw do
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
-      namespace :search do
-        get '/' => 'search#index', only: :index, controller: :search
-      end
+      # resources :contexts, only: :index
+      resources :search, only: :index
     end
   end
   

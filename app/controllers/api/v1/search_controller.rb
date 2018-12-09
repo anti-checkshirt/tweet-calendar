@@ -1,12 +1,5 @@
-class SearchController < ApplicationController
+class Api::V1::SearchController < ApplicationController
   def index
-        
-  end
-    
-  private
-  # リクエストパラメータのバリデーション
-  def search_params
-    params.permit(:id)
-    params.permit(:date)
+    render json: Tweet.all
   end
 end
