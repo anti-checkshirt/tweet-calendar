@@ -1,6 +1,8 @@
 class Api::V1::SearchController < ApplicationController
   def index
-    render json: Tweet.all
+    @tweet = Tweet.where(screen_name: params[:id], tweet_created_at: params[:date])
+    
+    render json: @tweet
   end
 
   private
