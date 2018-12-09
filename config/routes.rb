@@ -10,9 +10,7 @@ Rails.application.routes.draw do
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
-      namespace :auth do
-        get '/' => 'search#index', only: :index, controller: :search
-      end
+      resources :search, only: :index
     end
   end
   
