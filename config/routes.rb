@@ -7,5 +7,11 @@ Rails.application.routes.draw do
   get '/upload', to: 'tweet_carender#upload'
   
   post '/import', to: 'tweet_carender#import'
+
+  namespace :api, {format: 'json'} do
+    namespace :v1 do
+      resources :search, only: :index
+    end
+  end
   
 end
