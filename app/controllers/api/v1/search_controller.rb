@@ -1,17 +1,17 @@
 class Api::V1::SearchController < ApplicationController
   def index
-    render_json = {}
+    tweet_json = {}
     @tweets = Tweet.where(screen_name: params[:id])
     @tweets.each do |tweet|
       if tweet[:tweet_created_at].include?(params[:date])
         p tweet
-        render_json["screen_name"] = tweet.screen_name
-        render_json["text"] = tweet.text
+        tweet_json["screen_name"] = tweet.screen_name
+        tweet_json["text"] = tweet.text
       else
-        render_json["Error"] = "Not found."
+        tweet_json["Error"] = "Not found."
       end
     end
-    render json: render_json
+    render json: tweet_json
   end
 
   private
